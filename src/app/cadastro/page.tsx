@@ -3,7 +3,6 @@
 import React, { useState, ChangeEvent } from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Rodape from "@/components/Rodape";
 
 export default function Home () {
   const [email, setEmail] = useState("");
