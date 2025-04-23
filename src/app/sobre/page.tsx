@@ -11,7 +11,7 @@ import {
 export default function Sobre() {
   return (
     <main className=" px-20 py-12 text-gray-800 bg-gradient-to-tr from-purple-500 to-indigo-600">
-      <div className="relative rounded-3xl bg-slate-200 shadow-3xl px-20 py-16">
+      <div className="relative rounded-3xl bg-slate-100 shadow-3xl px-20 py-16">
         <div className="mb-6">
           <Link href="/" className="text-indigo-800 flex items-center gap-2">
             <ArrowLeft size={16} />
@@ -27,16 +27,16 @@ export default function Sobre() {
               Na The Real Estate acreditamos que a burocracia não precisa ser um
               obstáculo. Utilizamos inteligência artificial para transformar
               processos imobiliários em{" "}
-              <strong className="text-purple-700">
+				<strong className="text-purple-700 text-xl">
                 {" "}
                 soluções rápidas, seguras e totalmente digitais.
               </strong>
             </p>
 
-            <h2 className="text-2xl font-semibold text-slate-900 mb-2">
+            <h2 className="text-3xl font-semibold text-slate-900 mb-2">
               Nossa Missão
             </h2>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               Automatizar e simplificar a criação de contratos imobiliários,
               oferecendo segurança jurídica, praticidade e economia de tempo
               para corretores, proprietários e imobiliárias.
@@ -62,7 +62,7 @@ export default function Sobre() {
             <li>Interface intuitiva e segura</li>
           </ul>
 
-          <div className="bg-slate-100 p-6 rounded-xl shadow-md">
+          <div className="bg-white/50 p-6 rounded-xl shadow-2xl">
             <h2 className="text-xl font-bold mb-1 text-slate-900">
               Por que confiar na The Real Estate?
             </h2>

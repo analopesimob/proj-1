@@ -19,7 +19,6 @@ export default function Home () {
   function fazerCadastro() {
     console.log("Email:", email);
     console.log("Senha:", senha);
-    alert("Cadastro realizado com sucesso!");
     setEmail("");
     setSenha("");
   }

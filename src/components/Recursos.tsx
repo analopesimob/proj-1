@@ -1,12 +1,16 @@
 import React from "react";
 import {
   Handshake,
-  ScanEye, ShieldCheck, LaptopMinimalCheck, Bot,
+  ScanEye,
+  ShieldCheck,
+  LaptopMinimalCheck,
+  Bot,
 } from "lucide-react";
+import Link from "next/link";
 
 const Descricao: React.FC = () => {
   return (
-    <div className="bg-slate-300 py-20 text-slate-900 md:px-8 lg:px-52">
+    <div className="py-20 text-slate-900 md:px-8 lg:px-52">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="space-y-8">
@@ -71,41 +75,41 @@ const Descricao: React.FC = () => {
             </div>
           </div>
 
-          <div className="rounded-lg bg-slate-100 p-8">
+          <div className="rounded-lg bg-white p-8 shadow-2xl">
             <h2 className="mb-8 text-3xl font-bold">Recursos</h2>
 
             <div className="space-y-6">
               <div className="flex items-center">
                 <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100">
-                  <Handshake className="h-6 w-6 text-purple-600"/>
+                  <Handshake className="h-6 w-6 text-purple-600" />
                 </div>
                 <span className="text-lg">Interface Amigável</span>
               </div>
 
               <div className="flex items-center">
                 <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100">
-				<ScanEye className="h-6 w-6 text-purple-600"/>
+                  <ScanEye className="h-6 w-6 text-purple-600" />
                 </div>
                 <span className="text-lg">Foco em Precisão</span>
               </div>
 
               <div className="flex items-center">
                 <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100">
-                 <ShieldCheck className="h-6 w-6 text-purple-600"/>
+                  <ShieldCheck className="h-6 w-6 text-purple-600" />
                 </div>
                 <span className="text-lg">Aplicação Segura</span>
               </div>
 
               <div className="flex items-center">
                 <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100">
-                  <LaptopMinimalCheck className="h-6 w-6 text-purple-600"/>
+                  <LaptopMinimalCheck className="h-6 w-6 text-purple-600" />
                 </div>
                 <span className="text-lg">Fluxo de Experiência Otimizado</span>
               </div>
 
               <div className="flex items-center">
                 <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100">
-               <Bot className="h-6 w-6 text-purple-600"/>
+                  <Bot className="h-6 w-6 text-purple-600" />
                 </div>
                 <span className="text-lg">
                   Inteligência Artificial Avançada
@@ -113,9 +117,11 @@ const Descricao: React.FC = () => {
               </div>
             </div>
 
-            <button className="mt-10 w-full rounded-full bg-gradient-to-r from-purple-600 to-indigo-700 py-3 font-medium text-white">
-              GERAR CONTRATO AGORA
-            </button>
+            <Link href="/contrato" className="block w-full">
+              <button className="mt-10 w-full rounded-full bg-gradient-to-r from-purple-600 to-indigo-700 py-3 font-medium text-white shadow-lg transition-all duration-200 hover:scale-105">
+                GERAR CONTRATO AGORA
+              </button>
+            </Link>
           </div>
         </div>
       </div>

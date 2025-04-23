@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Mail, Facebook, Linkedin, Youtube } from 'lucide-react';
-
+import Link from 'next/link';
 
 const Rodape: React.FC = () => {
     return (
@@ -16,9 +16,11 @@ const Rodape: React.FC = () => {
                                     alt='logo'
                                     className='w-10'
                                 />
+								<Link href='/#'>
                                 <h1 className='flex h-10 items-center text-2xl font-semibold text-white'>
                                     The Real Estate
                                 </h1>
+								</Link>
                             </div>
                         </div>
                     </div>
@@ -29,14 +31,14 @@ const Rodape: React.FC = () => {
                         </h3>
                         <ul className='space-y-3 text-start text-sm'>
                             <li>
-                                <a href='#' className='hover:text-purple-900'>
-                                    Contratos de Compra e Venda
-                                </a>
+                                <Link href='' className='hover:text-purple-900'>
+                                    <span>Contratos de Compra e Venda</span>
+                                </Link>
                             </li>
                             <li>
-                                <a href='#' className='hover:text-purple-900'>
-                                    Contratos de Locação
-                                </a>
+								<Link href='/contrato/locacao' className='hover:text-purple-900'>
+                                    <span>Contratos de Locação</span>
+                                </Link>
                             </li>
                             <li>
                                 <a href='#' className='hover:text-purple-900'>
@@ -62,9 +64,11 @@ const Rodape: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href='#' className='hover:text-purple-900'>
+								<Link href='/contato' className='hover:text-purple-900'>
+                                <span>
 								Fale Conosco
-                                </a>
+                                </span>
+								</Link>
                             </li>
                         </ul>
                     </div>

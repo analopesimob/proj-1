@@ -12,7 +12,7 @@ import {
   Cloud,
   FileCheck,
   BrainCircuit,
-  ArrowLeft,
+  ArrowLeft, ChevronDown
 } from "lucide-react";
 
 const services = [
@@ -80,10 +80,9 @@ const services = [
 
 export default function ServicosPage() {
   return (
-	
     <div className="  px-20 py-12 text-gray-900 bg-gradient-to-tr from-purple-500 to-indigo-600">
-      <div className="relative rounded-3xl bg-slate-200 shadow-3xl px-16 py-16">
-	  <div className="mb-6">
+      <div className="relative rounded-3xl bg-slate-100 shadow-3xl px-16 py-16">
+        <div className="mb-6">
           <Link href="/" className="text-indigo-800 flex items-center gap-2">
             <ArrowLeft size={16} />
             <span>Voltar para início</span>
@@ -101,10 +100,13 @@ export default function ServicosPage() {
             <input
               type="text"
               placeholder="Busque um serviço específico..."
-			  className="w-full py-4 px-6 pr-12 text-base rounded-full bg-white text-gray-800 placeholder-gray-400 
+              className="w-full py-4 px-6 pr-12 text-base rounded-full bg-white text-gray-800 placeholder-gray-400 
 			  shadow-3xl focus:outline-none focus:ring-2 focus:ring-indigo-600"
             />
-            <Search className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-600" size={20}/>
+            <Search
+              className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-600"
+              size={20}
+            />
           </div>
         </section>
 
@@ -114,7 +116,7 @@ export default function ServicosPage() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="bg-slate-100 p-6 rounded-2xl shadow hover:shadow-lg transition-all"
+                className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="bg-indigo-100 p-3 rounded-xl text-purple-600">
@@ -140,12 +142,16 @@ export default function ServicosPage() {
               aos seus clientes.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-gradient-to-tr from-purple-500 to-indigo-600 text-white font-bold py-2 px-6 rounded-lg transition-all duration-200 hover:scale-105">
+			<Link href="/contrato">	
+              <button className="bg-gradient-to-tr from-purple-500 to-indigo-600 text-white font-bold py-3 px-5 rounded-lg transition-all duration-200 hover:scale-105">
                 Teste Grátis
               </button>
-              <button className="bg-transparent border-2 border-purple-600  text-purple-600 font-bold py-2 px-6 rounded-lg hover:bg-slate-100 transition-all duration-200 hover:scale-105">
+			  </Link>
+			  <Link href="/valor">
+              <button className="bg-transparent border-2 border-purple-500  text-purple-600 font-bold py-2 px-5 rounded-lg hover:bg-slate-100 transition-all duration-200 hover:scale-105">
                 Ver Preços
               </button>
+			  </Link>
             </div>
           </div>
         </section>

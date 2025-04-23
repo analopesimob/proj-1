@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
                 <img src='/AI.png' alt='Imagem de exemplo' className='max-w-xl' />
             </div>
 
-            <div className='flex flex-col items-start text-lg bg-slate-300 py-8 px-4 '>
+            <div className='flex flex-col items-start text-lg py-8 px-4 '>
                 <h1 className='mb-4 text-3xl font-bold'>
                     Revolucione seus Negócios Imobiliários!
                 </h1>

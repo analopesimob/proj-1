@@ -1,7 +1,6 @@
 import React from "react";
 import { LogIn } from "lucide-react";
 import { Scale, House, SearchCheck } from "lucide-react";
-import Card from "@/components/Card";
 import Recursos from "@/components/Recursos";
 import Ai from "@/components/Ai";
 import Rodape from "@/components/Rodape";
@@ -25,19 +24,28 @@ export default function HomePage() {
               <Link href="/sobre" className="text-white hover:text-purple-400">
                 <span>Sobre</span>
               </Link>
-              <Link href="/servicos" className="text-white hover:text-purple-400">
+              <Link
+                href="/servicos"
+                className="text-white hover:text-purple-400"
+              >
                 <span> Serviços </span>
               </Link>
-              <a href="#" className="text-white hover:text-purple-400">
-                Contato
-              </a>
+              <Link
+                href="/contato"
+                className="text-white hover:text-purple-400"
+              >
+                <span> Contato </span>
+              </Link>
 
               <div className="relative">
                 <div className="flex items-center space-x-2 rounded-sm text-white hover:text-purple-400">
-                <Link href="/cadastro" className="flex items-center space-x-2 rounded-sm text-white hover:text-purple-400">
+                  <Link
+                    href="/cadastro"
+                    className="flex items-center space-x-2 rounded-sm text-white hover:text-purple-400"
+                  >
                     <LogIn size={18} className="text-white" />
                     <span>Entrar</span>
-                </Link> 
+                  </Link>
                 </div>
               </div>
             </nav>
@@ -54,12 +62,13 @@ export default function HomePage() {
                 contratos imobiliários personalizados, seguros e juridicamente
                 válidos em questão de minutos.
               </p>
-              <button
-                className="transform rounded-2xl bg-indigo-700 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105"
-                // onClick={() => console.log("Iniciar teste")}
-              >
-                Iniciar teste
-              </button>
+              <Link href="/contrato">
+                <button
+                  className="transform rounded-2xl bg-indigo-700 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105"
+                >
+                  Iniciar teste
+                </button>
+              </Link>
             </div>
             <img
               src="/contract.png"
@@ -75,25 +84,45 @@ export default function HomePage() {
           Nossos serviços
         </h2>
 
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Card
-            variant="feature"
-            title="Contratos de Compra e Venda"
-            description="Criamos contratos personalizados para compra e venda de imóveis seguindo todas as normas legais vigentes."
-            icon={<Scale size={32} className="text-purple-600" />}
-          />
-          <Card
-            variant="feature"
-            title="Contratos de Locação"
-            description="Elaboramos contratos de aluguel completos que protegem os direitos de proprietários e inquilinos."
-            icon={<House size={32} className="text-purple-600" />}
-          />
-          <Card
-            variant="feature"
-            title="Análise e Correção"
-            description="Revisamos contratos existentes para garantir conformidade legal e sugerir melhorias."
-            icon={<SearchCheck size={32} className="text-purple-600" />}
-          />
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 "></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+
+          <Link href="/contrato/venda">
+            <div className="bg-white shadow-2xl p-7 rounded-2xl flex flex-col items-center hover:bg-purple-400/40 transition cursor-pointer">
+              <Scale className="w-8 h-8 text-purple-600 mb-4" />
+              <h2 className="text-xl text-slate-900 font-semibold mb-2">
+                Contratos de Compra e Venda
+              </h2>
+              <p className="text-slate-800 text-center">
+                Criamos contratos personalizados para compra e venda de imóveis
+                seguindo todas as normas legais vigentes.
+              </p>
+            </div>
+          </Link>
+
+          <Link href="/contrato/locacao">
+            <div className="bg-white shadow-2xl p-7 rounded-2xl flex flex-col items-center hover:bg-purple-400/40 transition cursor-pointer">
+              <House className="w-8 h-8 text-purple-600 mb-4" />
+              <h2 className="text-xl text-slate-900 font-semibold mb-2">
+                Contratos de Locação
+              </h2>
+              <p className="text-slate-800 text-center">
+                Elaboramos contratos de aluguel completos que protegem os
+                direitos de proprietários e inquilinos.
+              </p>
+            </div>
+          </Link>
+
+          <div className="bg-white shadow-2xl p-7 rounded-2xl flex flex-col items-center hover:bg-purple-400/40 transition cursor-pointerr">
+            <SearchCheck className="w-8 h-8 text-purple-600 mb-4" />
+            <h2 className="text-xl text-slate-900 font-semibold mb-2">
+              Análise e Correção
+            </h2>
+            <p className="text-slate-800 text-center">
+              Revisamos contratos existentes para garantir conformidade legal e
+              sugerir melhorias.
+            </p>
+          </div>
         </div>
       </div>
       <Recursos />
