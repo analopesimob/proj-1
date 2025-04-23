@@ -42,8 +42,9 @@ export default function ContractGenerator() {
 			<select
 			name="estadoCivil"
 			className="w-full bg-white/20 text-white rounded-lg px-4 py-3 focus:outline-none placeholder-white/70"
+			defaultValue=""
 		  >
-			<option defaultValue="" disabled selected>Estado Civil</option>
+			<option value="" disabled>Estado Civil</option>
 			<option value="solteiro">Solteiro(a)</option>
 			<option value="casado">Casado(a)</option>
 			<option value="separado">Separado(a)</option>
