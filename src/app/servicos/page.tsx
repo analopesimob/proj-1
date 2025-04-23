@@ -12,7 +12,7 @@ import {
   Cloud,
   FileCheck,
   BrainCircuit,
-  ArrowLeft, ChevronDown
+  ArrowLeft
 } from "lucide-react";
 
 const services = [
