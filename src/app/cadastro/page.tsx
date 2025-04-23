@@ -4,7 +4,7 @@ import React, { useState, ChangeEvent } from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function Home () {
+export default function Home() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -32,9 +32,11 @@ export default function Home () {
             <span>Voltar para início</span>
           </Link>
         </div>
-        
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Cadastre-se</h2>
-        
+
+        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
+          Cadastre-se
+        </h2>
+
         <div>
           <div className="mb-4">
             <label className="block text-slate-900 mb-2" htmlFor="email">
@@ -50,7 +52,7 @@ export default function Home () {
               required
             />
           </div>
-          
+
           <div className="mb-6">
             <label className="block text-slate-900 mb-2" htmlFor="senha">
               Senha
@@ -65,7 +67,7 @@ export default function Home () {
               required
             />
           </div>
-          
+
           <button
             type="button"
             onClick={fazerCadastro}
@@ -74,7 +76,7 @@ export default function Home () {
             Criar conta
           </button>
         </div>
-        
+
         <p className="mt-4 text-center text-slate-900">
           Já tem uma conta?{" "}
           <Link href="/login" className="text-indigo-700">
@@ -85,5 +87,3 @@ export default function Home () {
     </div>
   );
 }
-
-  

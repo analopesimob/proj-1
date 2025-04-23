@@ -27,7 +27,7 @@ export default function Sobre() {
               Na The Real Estate acreditamos que a burocracia não precisa ser um
               obstáculo. Utilizamos inteligência artificial para transformar
               processos imobiliários em{" "}
-				<strong className="text-purple-700 text-xl">
+              <strong className="text-purple-700 text-xl">
                 {" "}
                 soluções rápidas, seguras e totalmente digitais.
               </strong>

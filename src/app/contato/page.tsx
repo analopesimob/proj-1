@@ -51,8 +51,8 @@ export default function Contato() {
                 assistente virtual te responde rapidinho.
               </p>
               <button className="transform rounded-2xl bg-gradient-to-r from-purple-700 to-indigo-700 px-18 py-3 font-bold text-white flex items-center shadow-lg transition-all duration-200 hover:scale-105">
-                <MessageCircle className="w-5 h-5 mr-2"/>
-                  Iniciar conversa
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Iniciar conversa
               </button>
             </div>
           </div>

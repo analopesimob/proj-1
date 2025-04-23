@@ -12,7 +12,7 @@ import {
   Cloud,
   FileCheck,
   BrainCircuit,
-  ArrowLeft
+  ArrowLeft,
 } from "lucide-react";
 
 const services = [
@@ -142,16 +142,16 @@ export default function ServicosPage() {
               aos seus clientes.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-			<Link href="/contrato">	
-              <button className="bg-gradient-to-tr from-purple-500 to-indigo-600 text-white font-bold py-3 px-5 rounded-lg transition-all duration-200 hover:scale-105">
-                Teste Grátis
-              </button>
-			  </Link>
-			  <Link href="/valor">
-              <button className="bg-transparent border-2 border-purple-500  text-purple-600 font-bold py-2 px-5 rounded-lg hover:bg-slate-100 transition-all duration-200 hover:scale-105">
-                Ver Preços
-              </button>
-			  </Link>
+              <Link href="/contrato">
+                <button className="bg-gradient-to-tr from-purple-500 to-indigo-600 text-white font-bold py-3 px-5 rounded-lg transition-all duration-200 hover:scale-105">
+                  Teste Grátis
+                </button>
+              </Link>
+              <Link href="/valor">
+                <button className="bg-transparent border-2 border-purple-500  text-purple-600 font-bold py-2 px-5 rounded-lg hover:bg-slate-100 transition-all duration-200 hover:scale-105">
+                  Ver Preços
+                </button>
+              </Link>
             </div>
           </div>
         </section>
