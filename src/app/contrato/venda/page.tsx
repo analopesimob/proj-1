@@ -2,15 +2,15 @@ import { ChevronRight } from "lucide-react";
 
 export default function ContractGenerator() {
   return (
-    <section className="bg-slate-200 min-h-screen py-10 px-6 md:px-20 text-white">
+    <section className="bg-slate-200 min-h-screen py-2 md:px-1 text-white">
+		
       {/* Container flex para as duas colunas */}
       <div className="flex flex-col md:flex-row gap-8">
         {/* Coluna da esquerda (1/3) */}
-        <aside className="w-full md:w-1/3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-8 rounded-2xl shadow-lg">
-          <div className="flex items-center gap-4 mb-8">
-            {/* <FileText className="w-8 h-8" /> */}
+        <aside className="w-full md:w-1/4 bg-gradient-to-br from-indigo-700 to-purple-800 text-white p-8 rounded-2xl shadow-lg">
+          <div className="flex items-center gap-4 mb-6 ">
 
-            <h2 className="text-2xl font-bold">Contrato de Compra e Venda</h2>
+            <h1 className="text-xl text-center font-bold">Dados Vendedor(a)</h1>
           </div>
 
           <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function ContractGenerator() {
               <option value="viuvo">Viúvo(a)</option>
             </select>
 
-            {/* <h1> Cônjuge</h1>
+			<h1 className="text-xl font-bold">Dados Comprador(a)</h1>
 		  <input 
               type="text" 
               name="cpfCnpj"
@@ -84,13 +84,13 @@ export default function ContractGenerator() {
 			name="estadoCivil"
 			className="w-full bg-white/20 text-white rounded-lg px-4 py-3 focus:outline-none placeholder-white/70"
 		  >
-			<option defaultValue="" disabled selected>Estado Civil</option>
+			<option defaultValue="" >Estado Civil</option>
 			<option value="solteiro">Solteiro(a)</option>
 			<option value="casado">Casado(a)</option>
 			<option value="separado">Separado(a)</option>
 			<option value="divorciado">Divorciado(a)</option>
 			<option value="viuvo">Viúvo(a)</option>
-		  </select> */}
+		  </select>
           </div>
 
           <button className="mt-8 flex items-center gap-2 bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-100 transition">
@@ -100,9 +100,13 @@ export default function ContractGenerator() {
         </aside>
 
         {/* Coluna da direita (2/3) */}
-        <div className="w-full md:w-2/3 bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
-          <h3 className="text-2xl font-bold mb-4">Contrato Pré-visualizado</h3>
-          <p className="mb-6 text-gray-600 text-sm">
+		<div className="text-slate-900 text-center ">
+			</div>
+			
+        <div className="md:w-2/4 bg-white text-slate-900 p-8 mt-28 rounded-2xl shadow-2xl">
+		
+          <h2 className="text-2xl font-bold mb-4">Contrato Pré-visualizado</h2>
+          <p className="mb-6 text-slate-500 text-sm">
             Este é um rascunho do seu contrato baseado nas informações
             preenchidas:
           </p>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Key, FileEdit } from "lucide-react";
+import { Home, Key, FileEdit, ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -10,9 +10,16 @@ export default function ContractTypeSelector() {
   function handleSelectContract(type: string) {
     router.push(`/gerar-contrato?tipo=${type}`);
   }
+  
 
   return (
-    <section className="bg-slate-200 min-h-screen py-16 px-8 flex flex-col items-center text-slate-900">
+    <section className="bg-slate-200 min-h-screen py-16 flex flex-col items-center text-slate-900">
+		<div className="mb-6">
+          <Link href="/" className="text-indigo-800 flex items-center gap-2">
+            <ArrowLeft size={16} />
+            <span>Voltar para início</span>
+          </Link>
+        </div>
       <h1 className="text-4xl font-bold mb-8 text-center">
         Qual tipo de contrato você deseja gerar?
       </h1>

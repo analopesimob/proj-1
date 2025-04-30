@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <div className="p-6">
-        <div className="relative rounded-3xl bg-gradient-to-tr from-purple-600 to-indigo-700 shadow-2xl">
+        <div className="relative rounded-3xl bg-gradient-to-tr from-purple-700 to-indigo-800 shadow-2xl">
           {/* header section */}
           <div className="flex max-h-screen justify-between p-10 text-center lg:px-40">
             <div className="flex items-center">
@@ -64,7 +64,7 @@ export default function HomePage() {
               </p>
               <Link href="/contrato">
                 <button
-                  className="transform rounded-2xl bg-indigo-700 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105"
+                  className="transform rounded-2xl bg-indigo-600 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Iniciar teste
                 </button>
@@ -79,7 +79,7 @@ export default function HomePage() {
         </div>
       </div>
       {/* Services section */}
-      <div className="px-8 py-32 lg:px-40">
+      <div className="px-8 py-20 lg:px-40">
         <h2 className="mb-12 text-center text-3xl font-light text-gray-900">
           Nossos serviços
         </h2>

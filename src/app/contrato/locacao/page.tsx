@@ -10,7 +10,7 @@ export default function ContractGenerator() {
           <div className="flex items-center gap-4 mb-8">
             {/* <FileText className="w-8 h-8" /> */}
 
-            <h2 className="text-2xl font-bold">Contrato de Locação</h2>
+            <h1 className="text-2xl font-bold">Contrato de Locação</h1>
           </div>
 
           <div className="space-y-4">
