@@ -25,7 +25,10 @@ const Rodape: React.FC = () => {
               <h3 className="mb-5 text-start font-bold">Nossos Serviços</h3>
               <ul className="space-y-3 text-start text-sm">
                 <li>
-                  <Link href="/contrato/venda" className="hover:text-purple-900">
+                  <Link
+                    href="/contrato/venda"
+                    className="hover:text-purple-900"
+                  >
                     <span>Contratos de Compra e Venda</span>
                   </Link>
                 </li>

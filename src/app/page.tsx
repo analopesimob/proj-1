@@ -63,9 +63,7 @@ export default function HomePage() {
                 válidos em questão de minutos.
               </p>
               <Link href="/contrato">
-                <button
-                  className="transform rounded-2xl bg-indigo-600 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105"
-                >
+                <button className="transform rounded-2xl bg-indigo-600 px-6 py-3 font-bold text-white shadow-lg transition-all duration-200 hover:scale-105">
                   Iniciar teste
                 </button>
               </Link>
@@ -86,7 +84,6 @@ export default function HomePage() {
 
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 "></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
-
           <Link href="/contrato/venda">
             <div className="bg-white shadow-2xl p-7 rounded-2xl flex flex-col items-center hover:bg-purple-400/40 transition cursor-pointer">
               <Scale className="w-8 h-8 text-purple-600 mb-4" />
