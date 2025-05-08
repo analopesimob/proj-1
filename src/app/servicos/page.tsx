@@ -82,7 +82,7 @@ export default function ServicosPage() {
   return (
     <div className="  px-20 py-12 text-gray-900 bg-gradient-to-tr from-purple-500 to-indigo-600">
       <div className="relative rounded-3xl bg-slate-100 shadow-3xl px-16 py-16">
-        <div className="mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 items- mb-12">
           <Link href="/" className="text-indigo-800 flex items-center gap-2">
             <ArrowLeft size={16} />
             <span>Voltar para início</span>

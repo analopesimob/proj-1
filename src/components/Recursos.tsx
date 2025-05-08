@@ -118,7 +118,7 @@ const Descricao: React.FC = () => {
             </div>
 
             <Link href="/contrato" className="block w-full">
-              <button className="mt-10 w-full rounded-full bg-gradient-to-r from-purple-600 to-indigo-700 py-3 font-medium text-white shadow-lg transition-all duration-200 hover:scale-105">
+              <button className="mt-10 w-full rounded-full bg-gradient-to-r from-purple-700 to-indigo-700 py-3 font-medium text-white shadow-lg transition-all duration-200 hover:scale-105">
                 GERAR CONTRATO AGORA
               </button>
             </Link>

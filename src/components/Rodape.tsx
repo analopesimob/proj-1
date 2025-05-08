@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Rodape: React.FC = () => {
   return (
-    <div className="p-6 text-slate-900">
-      <div className="rounded-3xl bg-slate-400 py-10 text-center lg:px-40">
+    <div className="p-3 text-slate-900">
+      <div className="rounded-3xl bg-slate-300 py-10 text-center lg:px-40">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
             <div className="">
