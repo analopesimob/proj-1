@@ -152,7 +152,7 @@ export default function HomePage() {
       <div className="p-1">
         <div className="relative rounded-3xl bg-gradient-to-tr from-purple-600 to-indigo-800 shadow-2xl">
           {/* hero section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:px-40 pt-20  ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:px-52 pt-20  ">
             <div className=" text-left">
               <h1 className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl font-light text-white">
                 Transforme burocracia imobiliária em simplicidade com apenas um
